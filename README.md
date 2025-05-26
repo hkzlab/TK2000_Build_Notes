@@ -28,7 +28,7 @@ The TK2000 regulates the -5V using a zener diode. Both diode type and series res
 Given that -5V is used only for the negative bias of the LM741 op-amp and on the external bus (where I expect the board making use of it will also have similarly low load), I decided to fit the following:
 
 - D12 - TZX5V1A
-- R72 - 750ohm
+- R72 - 750 ohm
 
 I expect to handle loads of slightly less of 10mA this way, and it has worked for now.
 
@@ -78,7 +78,7 @@ I used the following connectors for the build:
 ### Other changes
 
 - L1 - 27uH inductor (clone's schematic has 47uH, Apple II and original boards show 27uH inductors)
-- R17 - 1Kohm (the schematic has 2K, photos of original boards show 1K resistors)
+- R17 - 1K ohm (the schematic has 2K, photos of original boards show 1K resistors)
 - R9 - 680 ohm (original schematic had 1,2k, clone's had 12k, original boards have 680 ohm)
 - J2 must be closed to provide 5V to DRAMs
 - J13 should be closed by default on original boards
