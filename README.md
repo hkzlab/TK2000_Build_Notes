@@ -67,11 +67,11 @@ I also added another 47K resistor between the base of the transistor Q7 and +5V,
 
 I used the following connectors for the build:
 
-- (PJ-301M)[https://www.aliexpress.com/item/4000977771185.html] for the cassette/remote control ports
-- (These)[https://www.aliexpress.com/item/1005008453287975.html] coax connectors for the monitor/audio outputs. These are not a perfect fit and need to be dremeled (and have a tab snapped) to fit
-- Right angle (DE9 female connectors)[https://www.aliexpress.com/item/1005005458542870.html] for the power connection. It would be better to find a version of this with longer PCB mount pins
-- (This)[https://www.aliexpress.com/item/1005008354411366.html] 50 pin right angle edge socket
-- (This)(https://www.mouser.it/ProductDetail/571-5747467-4) DE9 male connector for the joystick port
+- [PJ-301M](https://www.aliexpress.com/item/4000977771185.html) for the cassette/remote control ports
+- [These](https://www.aliexpress.com/item/1005008453287975.html) coax connectors for the monitor/audio outputs. These are not a perfect fit and need to be dremeled (and have a tab snapped) to fit
+- Right angle [DE9 female connectors](https://www.aliexpress.com/item/1005005458542870.html) for the power connection. It would be better to find a version of this with longer PCB mount pins
+- [This](https://www.aliexpress.com/item/1005008354411366.html) 50 pin right angle edge socket
+- [This](https://www.mouser.it/ProductDetail/571-5747467-4) DE9 male connector for the joystick port
 
 ![Closeup photo encompassing audio jack connectos and the coax connectors](pics/components/rca_jacks.jpg)
 
