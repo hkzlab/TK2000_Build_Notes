@@ -46,6 +46,15 @@ I expect to handle loads of slightly less of 10mA this way, and it has worked fo
 
 ### Cassette input
 
+The original schematic has an error around the feedback circuit of the OPAMP, and the clone inherits the same error (fixed on original boards):
+R2 should be disconnected from the junction of pin 6 of U32 and the R3 resistor, and connected between R3 and pin 2 of U31.
+
+Also, some component values are wrong or missing.
+
+- R2 - 12K ohm
+- C64 - 100nF
+
+![Closeup photo of the transistor at Q2](pics/fixes/cassette_input_fix.jpg)
 
 ## Mods
 
@@ -61,6 +70,16 @@ I replaced part of the video circuit in the schematic (which doesn't have most o
 Then I cut the trace going from the junction of R46 and R47 to the center of the coax connector, and replaced it with a 27 ohm resistor in series with a 2.7 uH inductor.
 
 ![Underside of the monitor connection with resistor + inductor mod](pics/mods/video_resistor_inductor.jpg)
+
+### Color burst circuit
+
+The schematic does not specify what value to use for capacitor C51.
+
+If one is content with a fixed one, something around ~80pF is probably ok, otherwise, install a 47pF herem then a 5-50pF variable capacitor beside L1 (between the collector of Q1 and GND) by scratching some of the nearby solder mask.
+
+This will give you a way to adjust the color burst.
+
+![Closeup photo of an SMD variable capacitor installed beside L1](pics/mods/color_trimmer.jpg)
 
 ### Clock generation circuit
 
