@@ -32,15 +32,32 @@ Given that -5V is used only for the negative bias of the LM741 op-amp and on the
 
 I expect to handle loads of slightly less of 10mA this way, and it has worked for now.
 
+### Reset circuit
+
+The BOM has a wrong value for resistor R26 in the reset circuit, and is also missing the value for C100 capacitor.
+
+- C100 - 100uF
+- R26 - 10K ohm
+
+### Keyboard repeat Clock
+
+The original schematic provide no value for the C58 capacitor that sets the frequency for the oscillator used in the repeat circuitry of the keyboard.
+
+I used a 100uF cap, that produces roughly 4Hz.
+
+**This change is yet to be tested against real world usage**.
+
+### Internal speaker
+
 ### Other changes
 
 - L1 - 27uH inductor (clone's schematic has 47uH, Apple II and original boards show 27uH inductors)
 - R17 - 1Kohm (the schematic has 2K, photos of original boards show 1K resistors)
+- R9 - 680 ohm (original schematic had 1,2k, clone's had 12k, original boards have 680 ohm)
 - J2 must be closed to provide 5V to DRAMs
 - J13 should be closed by default on original boards
 - J12 should be closed by default on original boards
 - J4 for 4164, this must be closed to bring the muxed A7 line to pin 9 of the DRAMs. Also, remember to **REMOVE or NOT TO INSTALL C13 and C17** if you close this!
-
 
 ## Fixes
 
@@ -89,6 +106,9 @@ I did not have BF494B transistors on hand, and the schematic also did not indica
 - C46 - 10pF, note that depending on the crystal You're using, you might have to tweak the value of this
 - C49 - 100pF, same as above
 - C50 - 10pF
+- R40 - 47 ohm
+- R41 - 1.5K ohm
+- R42 - 22K ohm
 
 I used [these](https://www.mouser.it/ProductDetail/815-ABL-14.31818B2) crystals for my NTSC modded board.
 
