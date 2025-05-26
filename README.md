@@ -81,9 +81,9 @@ I used the following connectors for the build:
 - R17 - 1K ohm (the schematic has 2K, photos of original boards show 1K resistors)
 - R9 - 680 ohm (original schematic had 1.2K, clone's had 12K, original boards have 680 ohm)
 - J2 must be closed to provide 5V to DRAMs
-- J13 should be closed by default on original boards
-- J12 should be closed by default on original boards
-- J4 for 4164, this must be closed to bring the muxed A7 line to pin 9 of the DRAMs. Also, remember to **REMOVE or NOT TO INSTALL C13 and C17** if you close this!
+- J13 is closed by default on original boards, needs jumpering here
+- J12 is closed by default on original boards, needs jumpering here
+- Close J4 for 4164, this must be jumpered to bring the muxed A7 line to pin 9 of the DRAMs. Also, remember to **REMOVE or NOT TO INSTALL C13 and C17** if you jumper this!
 
 ## Fixes
 
