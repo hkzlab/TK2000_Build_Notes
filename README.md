@@ -2,6 +2,7 @@
 
 ## Introduction
 This document collects my notes on the building of a TK2000 clone from [here](https://github.com/clemarfolly/Microdigital-TK2000). Note that I am building a Rev. 1 board.
+Thanks to [clemarfolly](https://github.com/clemarfolly) for all the work that made this possible!
 
 The BOM provided with the project is incomplete, sometimes not matching original boards and the clone also needed a few mods to work properly.
 Plus, I made some changes of my own to better match the Apple II+ schematics.
