@@ -49,6 +49,20 @@ I used a 100uF cap, that produces roughly 4Hz.
 
 ### Internal speaker
 
+The components for the internal speaker are not populated on original boards, and left without value in the schematic.
+
+I am not totally satisfied with this solution, as the volume is still too low for my liking, but it works:
+
+- Q7 - BC548
+- R67 - 27 ohm
+- R73 - 2K ohm
+- R74 - 47K ohm
+- C47 - 100nF
+
+I also added another 47K resistor between the base of the transistor Q7 and +5V, this has improved the volume slightly.
+
+![Closeup photo of the transistor at Q2](pics/mods/speaker_pullup.jpg)
+
 ### Other changes
 
 - L1 - 27uH inductor (clone's schematic has 47uH, Apple II and original boards show 27uH inductors)
@@ -87,6 +101,9 @@ I replaced part of the video circuit in the schematic (which doesn't have most o
 Then I cut the trace going from the junction of R46 and R47 to the center of the coax connector, and replaced it with a 27 ohm resistor in series with a 2.7 uH inductor.
 
 ![Underside of the monitor connection with resistor + inductor mod](pics/mods/video_resistor_inductor.jpg)
+
+![Photo of a 2N3904 replacing a BC548](pics/mods/video_transistor.jpg)
+
 
 ### Color burst circuit
 
