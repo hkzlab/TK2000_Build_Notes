@@ -78,7 +78,6 @@ I used the following connectors for the build:
 
 ### Other changes
 
-- L1 - 27uH inductor (clone's schematic has 47uH, Apple II and original boards show 27uH inductors)
 - R17 - 1K ohm (the schematic has 2K, photos of original boards show 1K resistors)
 - R9 - 680 ohm (original schematic had 1,2k, clone's had 12k, original boards have 680 ohm)
 - J2 must be closed to provide 5V to DRAMs
@@ -120,10 +119,11 @@ Then I cut the trace going from the junction of R46 and R47 to the center of the
 
 ### Color burst circuit
 
-The schematic does not specify what value to use for capacitor C51.
+The schematic does not specify what value to use for capacitor C51, and the value of L1 seems wrong in respect to original schematic and boards.
 
-If one is content with a fixed one, something around ~80pF is probably ok, otherwise, install a 47pF herem then a 5-50pF variable capacitor beside L1 (between the collector of Q1 and GND) by scratching some of the nearby solder mask.
+Install a 27uH inductor for L1: clone's schematic has 47uH, but Apple II and original boards show 27uH inductors here.
 
+If one is content with a fixed cap, something around ~80pF is probably ok, otherwise, install a 47pF here and then a 5-50pF variable capacitor beside L1 (between the collector of Q1 and GND) by scratching some of the nearby solder mask.
 This will give you a way to adjust the color burst.
 
 ![Closeup photo of an SMD variable capacitor installed beside L1](pics/mods/color_trimmer.jpg)
