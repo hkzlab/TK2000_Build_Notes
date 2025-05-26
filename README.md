@@ -153,3 +153,16 @@ I found out that this can be fixed by adding a small capacitance of around 150pF
 I placed the caps near R17, on the underside of the board.
 
 ![Closeup of two ceramic caps in parallel soldered under the PCB](pics/mods/video_smoothing_color_issue.jpg)
+
+### NTSC mod
+
+This is not mine, and comes from a facebook group (lost the link...), but as I did this on my unit, I'll report it here.
+
+- Replace whatever crystal in the unit with a 14.31818Mhz crystal.
+- Remove U52 (74LS157) from the socket, lift pin 1 so it doesn't make contact when reinserted. Solder pin 1 and pin 8 (GND) together with a small wire on top of the IC.
+- Remove U51 (74LS174) from the socket, lift pin 2 so it doesn't make contact when reinserted.
+- Turn the board around, use a thin wire to solder pins 2, 3 and 4 on the underside of U51 together.
+
+![Closeup photo of U51 and U52, top side](pics/mods/ntsc_mod_top.jpg)
+
+![Closeup photo of U51 and U52, bottom side, showing pins 2, 3 and 4 of U51 soldered together](pics/mods/ntsc_mod_bottom.jpg)
