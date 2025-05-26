@@ -123,7 +123,7 @@ The schematic does not specify what value to use for capacitor C51, and the valu
 
 Install a 27uH inductor for L1: clone's schematic has 47uH, but Apple II and original boards show 27uH inductors here.
 
-If one is content with a fixed cap, something around ~80pF is probably ok, otherwise, install a 47pF here and then a 5-50pF variable capacitor beside L1 (between the collector of Q1 and GND) by scratching some of the nearby solder mask.
+If one is content with a fixed cap, something around ~80pF for C51 is probably ok, otherwise, install a 47pF here and then a 5-50pF variable capacitor beside L1 (between the collector of Q1 and GND) by scratching some of the nearby solder mask.
 This will give you a way to adjust the color burst.
 
 ![Closeup photo of an SMD variable capacitor installed beside L1](pics/mods/color_trimmer.jpg)
