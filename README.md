@@ -79,7 +79,7 @@ I used the following connectors for the build:
 ### Other changes
 
 - R17 - 1K ohm (the schematic has 2K, photos of original boards show 1K resistors)
-- R9 - 680 ohm (original schematic had 1,2k, clone's had 12k, original boards have 680 ohm)
+- R9 - 680 ohm (original schematic had 1.2K, clone's had 12K, original boards have 680 ohm)
 - J2 must be closed to provide 5V to DRAMs
 - J13 should be closed by default on original boards
 - J12 should be closed by default on original boards
