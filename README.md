@@ -18,9 +18,14 @@ Original boards also introduce a protection diode in series with R69 and R71, wh
 
 The direction indicated in the clone's schematic is also wrong, and the diode should be facing the other direction as the one presented.
 
-The diodes I have used here are 1N4148, for a lack of better information on what is used on original boards.
+The diodes used here are probably zeners, possibly 12V.
 
 ![R69 and R71 with diode in series](pics/fixes/resistor_diodes.jpg)
+
+Here is a screenshot of the corrected schematic:
+
+![R69 and R71 with diode in series](pics/fixes/resistor_diodes_schema.png)
+
 
 ### -5V regulation circuit
 
