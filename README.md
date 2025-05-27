@@ -26,6 +26,7 @@ Here is a screenshot of the corrected schematic:
 
 ![R69 and R71 with diode in series](pics/fixes/resistor_diodes_schema.png)
 
+I have ordered a few in the range of 11 - 13V to test this circuit, will update once done.
 
 ### -5V regulation circuit
 
