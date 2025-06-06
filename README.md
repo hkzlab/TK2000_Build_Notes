@@ -172,3 +172,15 @@ This is not mine, and comes from a facebook group (lost the link...), but as I d
 ![Closeup photo of U51 and U52, top side](pics/mods/ntsc_mod_top.jpg)
 
 ![Closeup photo of U51 and U52, bottom side, showing pins 2, 3 and 4 of U51 soldered together](pics/mods/ntsc_mod_bottom.jpg)
+
+### 27C256 mod
+
+On the PCB, pins 28 (VCC) and 27 of U39 are hardwired together. This means a 27C256 can be used, but only the top half will be active.
+
+To be able to wire pin 27 (A14) to an external jumper to GND and switch to the bottom half (to switch between the TK2000 and MPF-II ROMs for example), 
+do the following:
+
+1. Cut the trace between pin 27 and 28 on the underside of the board
+2. Connect pin 27 and 28 with a 10K pullup resistor
+
+![Closeup photo of pullup resistor between pins 27 and 28 of U36](pics/mods/rom_mod.jpg)
