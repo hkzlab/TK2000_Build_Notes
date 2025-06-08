@@ -13,12 +13,12 @@ I also wired the board to use 4164, 5V-only powered DRAMs.
 
 ### Missing diodes in series with R69/R71
 
-The original schematic has the emitter of Q5 and Q6 connected to GND, while original boards (and the clone) have it connected to -12V.
+The original schematic has the emitter of Q5 and Q6 connected to GND, while photos of original boards show it connected to -12V (and the clone does this as well).
 Original boards also introduce a diode in series with R69 and R71, which is not indicated in the clone's BOM.
 
-The direction indicated in the clone's schematic is also wrong, and the diode should be facing the other direction as the one presented.
+The direction indicated in the clone's schematic is also wrong, and the diode should be facing the other direction in respect to the one presented by the schematic.
 
-The diodes used here must be zeners, between 11 or 12V, depending on the level of your nominal -12V supply.
+The diodes used here must be zeners, between 11V and 12V, depending on the actual voltage level of your -12V supply.
 
 ![R69 and R71 with diode in series](pics/fixes/resistor_diodes.jpg)
 
