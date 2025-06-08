@@ -18,15 +18,17 @@ Original boards also introduce a diode in series with R69 and R71, which is not 
 
 The direction indicated in the clone's schematic is also wrong, and the diode should be facing the other direction as the one presented.
 
-The diodes used here are probably zeners, possibly 11 or 12V.
+The diodes used here must be zeners, between 11 or 12V, depending on the level of your nominal -12V supply.
 
 ![R69 and R71 with diode in series](pics/fixes/resistor_diodes.jpg)
+
+Note that the cathodes are pointing AWAY from the resistors.
 
 Here is a screenshot of the corrected schematic:
 
 ![R69 and R71 with diode in series](pics/fixes/resistor_diodes_schema.png)
 
-I have ordered a few in the range of 11 - 13V to test this circuit, will update once done.
+My build uses 11V Zener diodes (my -12V supply actually puts out -10.9V).
 
 ### -5V regulation circuit
 
