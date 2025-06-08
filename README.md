@@ -28,7 +28,7 @@ Here is a screenshot of the corrected schematic:
 
 ![R69 and R71 with diode in series](pics/fixes/resistor_diodes_schema.png)
 
-My build uses 11V Zener diodes (my -12V supply actually puts out -10.9V).
+My build uses BZX55C11 11V Zener diodes (my -12V supply actually puts out -10.9V).
 
 ### -5V regulation circuit
 
