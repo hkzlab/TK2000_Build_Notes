@@ -45,10 +45,12 @@ I expect to handle loads of slightly less of 10mA this way, and it has worked fo
 
 The BOM has a wrong value for resistors R26 in the reset circuit, and is also missing the value for C100 capacitor.
 
-- C100 - 100uF
-- R26 - 10K ohm
+- C100 - 10uF
+- R26 - 33K ohm
+- R27 - 750 ohm
 
-This works, but doesn't bring `/RESET` down to GND completely. A better option would be to rewire the keyboard to connect the RESET button directly to GND.
+This works, but doesn't bring `/RESET` down to GND completely (reaches ~0.8V, which seems to reset the machine reliably).
+A better option would be to rewire the keyboard to connect the RESET button directly to GND.
 
 ### Keyboard repeat Clock
 
