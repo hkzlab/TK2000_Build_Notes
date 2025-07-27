@@ -47,7 +47,6 @@ The BOM has a wrong value for resistors R26 in the reset circuit, and is also mi
 
 - C100 - 100uF
 - R26 - 10K ohm
-- R27 - 750 ohm (adjusted for a better reset signal)
 
 This works, but doesn't bring `/RESET` down to GND completely. A better option would be to rewire the keyboard to connect the RESET button directly to GND.
 
